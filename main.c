@@ -322,7 +322,7 @@ int main(int argc, char **argv) {
 
     // read the ROM header
     else if (opts.mode == MODE_TITLE) {
-        char buf[512];
+        unsigned char buf[512];
         int i;
 
         r = ems_read(FROM_ROM, 0, (unsigned char *)buf, 512);
